@@ -1,0 +1,112 @@
+[
+    {
+        "name": "Методология программной инженерии",
+        "dayOfWeek": 1,
+        "time": "13:20-14:50",
+        "isUpperWeek": true,
+        "classroom": "a-207",
+        "type": "ЛБ",
+        "startWeek": 1,
+        "endWeek": 11
+    },
+    {
+        "name": "Методология программной инженерии",
+        "dayOfWeek": 1,
+        "time": "15:00-16:30",
+        "isUpperWeek": true,
+        "classroom": "a-207",
+        "type": "ЛК",
+        "startWeek": 1,
+        "endWeek": 7
+    },
+    {
+        "name": "Методология программной инженерии",
+        "dayOfWeek": 1,
+        "time": "15:00-16:30",
+        "isUpperWeek": true,
+        "classroom": "a-207",
+        "type": "ЛБ",
+        "startWeek": 9,
+        "endWeek": 11
+    },
+    {
+        "name": "Разработка и реализация сетевых протоколов",
+        "dayOfWeek": 2,
+        "time": "13:20-14:50",
+        "isUpperWeek": true,
+        "classroom": "a-205",
+        "type": "ЛК",
+        "startWeek": 1,
+        "endWeek": 7
+    },
+    {
+        "name": "Пространственные базы данных",
+        "dayOfWeek": 2,
+        "time": "15:00-16:30",
+        "isUpperWeek": true,
+        "classroom": "a-214",
+        "type": "ЛК",
+        "startWeek": 1,
+        "endWeek": 7
+    },
+    {
+        "name": "Разработка и реализация сетевых протоколов",
+        "dayOfWeek": 2,
+        "time": "13:20-14:50",
+        "isUpperWeek": false,
+        "classroom": "a-205",
+        "type": "ЛБ",
+        "startWeek": 1,
+        "endWeek": 999
+    },
+    {
+        "name": "Пространственные базы данных",
+        "dayOfWeek": 2,
+        "time": "15:00-16:30",
+        "isUpperWeek": false,
+        "classroom": "a-214",
+        "type": "ПР",
+        "startWeek": 1,
+        "endWeek": 999
+    },
+    {
+        "name": "Конструирование компиляторов",
+        "dayOfWeek": 5,
+        "time": "13:20-14:50",
+        "isUpperWeek": true,
+        "classroom": "a-212a",
+        "type": "ПР",
+        "startWeek": 1,
+        "endWeek": 999
+    },
+    {
+        "name": "Теория распознавания образов",
+        "dayOfWeek": 5,
+        "time": "15:00-16:30",
+        "isUpperWeek": true,
+        "classroom": "a-217",
+        "type": "ЛБ",
+        "startWeek": 1,
+        "endWeek": 999
+    },
+    {
+        "name": "Конструирование компиляторов",
+        "dayOfWeek": 5,
+        "time": "13:20-14:50",
+        "isUpperWeek": false,
+        "classroom": "a-205",
+        "type": "ЛК",
+        "startWeek": 2,
+        "endWeek": 8
+    },
+    {
+        "name": "Теория распознавания образов",
+        "dayOfWeek": 5,
+        "time": "15:00-16:30",
+        "isUpperWeek": false,
+        "classroom": "a-217",
+        "type": "ЛК",
+        "startWeek": 2,
+        "endWeek": 8
+    }
+]
