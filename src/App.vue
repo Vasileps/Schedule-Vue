@@ -37,7 +37,7 @@ const weeks = computed(() => {
 
   let timeDifference = current.startDate - new Date(semester.value.startDate);
   current.number = Math.floor(timeDifference / (7 * 24 * 60 * 60 * 1000)) + 1;
-  current.isUpper = (current.number % 2) === semester.value.evenIsUpper;
+  current.isUpper = (current.number % 2 === 1) === semester.value.evenIsUpper;
 
   next.number = current.number + 1;
   next.isUpper = !current.isUpper;
