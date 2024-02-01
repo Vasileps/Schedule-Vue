@@ -1,13 +1,16 @@
 <template>
-    <div class="week">
-        <span v-if="week.isUpper" class="week-text text">Верхняя неделя</span>
-        <span v-else class="week-text text">Нижняя неделя</span>
-        <span class="week-text text">
-            {{ startDateName }} - {{ endDateName }}
-        </span>
-        <div class="days">
-            <DaySchedule v-for="day in days" :dayInfo="day" :key="day" />
+    <div class="week-container">
+        <div class="week-container" style="margin-bottom: 20px;">
+            <span class="week-name text">Неделя {{ startDateName }} – {{ endDateName }} </span>
+            <span :style="{color:weekTypeColor}" class="text">{{ weekType }}</span>
         </div>
+
+        <div v-if="notEmpty" class="days">
+            <DaySchedule v-for="(day, index) in days" :dayInfo="day" :key="index" />
+        </div>
+        <span v-else class="text alert">
+            Нет занятий
+        </span>
     </div>
 </template>
 
@@ -51,6 +54,14 @@ const days = computed(() => {
     return days;
 });
 
+const notEmpty = computed(() => {
+    for (var day of days.value)
+        if (day.subjects.length > 0) return true;
+    return false;
+})
+
+const weekTypeColor = computed(() => props.week.isUpper ? "#73d97d" : "#ffe18c")
+const weekType = computed(() => props.week.isUpper ? "верхняя" : "нижняя");
 const startDateName = computed(() => props.week.startDate.toLocaleDateString("ru-Ru", { month: '2-digit', day: '2-digit' }));
 const endDateName = computed(() => props.week.endDate.toLocaleDateString("ru-Ru", { month: '2-digit', day: '2-digit' }));
 </script>
@@ -66,15 +77,19 @@ const endDateName = computed(() => props.week.endDate.toLocaleDateString("ru-Ru"
     margin: 0px 10px 20px 10px;
 }
 
-.week-text {
+.alert{
     font-weight: bolder;
     font-size: 20px;
-    padding-bottom: 10px;
-    text-transform: capitalize;
-    text-align: center;
+    color: #cf3c6d;
 }
 
-.week {
+.week-name {
+    font-weight: bolder;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.week-container {
     display: flex;
     flex-flow: column;
     flex-wrap: wrap;

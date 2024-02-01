@@ -1,7 +1,7 @@
 <template>
     <div class="label">
-        <span> {{ subjectData.time }} {{ subjectData.classroom }} {{ subjectData.type }}</span>
-        <span style="font-style: italic;"> {{ subjectData.name }} </span>
+        <span class="subject-name"> {{ subjectData.name }} </span>
+        <span> {{ subjectData.time }} | {{ subjectData.classroom }} | {{ subjectData.type }}</span>     
     </div>
 </template>
 
@@ -22,5 +22,9 @@ export default {
 
 .label>span {
     color: white;
+}
+
+.subject-name{
+    font-weight: bold;
 }
 </style>

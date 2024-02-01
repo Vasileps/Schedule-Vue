@@ -1,6 +1,7 @@
 <template>
   <div style="margin: 10px;">
     <WeekSchedule :week="weeks.current" :subjects="subjectList" />
+    <hr style="margin: 10px;">
     <WeekSchedule :week="weeks.next" :subjects="subjectList" />
   </div>
 </template>
