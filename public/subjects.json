@@ -44,7 +44,7 @@
         "dayOfWeek": 2,
         "time": "15:00-16:30",
         "isUpperWeek": true,
-        "classroom": "a-214",
+        "classroom": "a-207",
         "type": "ЛК",
         "startWeek": 1,
         "endWeek": 7
@@ -64,7 +64,7 @@
         "dayOfWeek": 2,
         "time": "15:00-16:30",
         "isUpperWeek": false,
-        "classroom": "a-214",
+        "classroom": "a-207",
         "type": "ПР",
         "startWeek": 1,
         "endWeek": 999
@@ -94,7 +94,7 @@
         "dayOfWeek": 5,
         "time": "13:20-14:50",
         "isUpperWeek": false,
-        "classroom": "a-205",
+        "classroom": "a-402",
         "type": "ЛК",
         "startWeek": 2,
         "endWeek": 8
